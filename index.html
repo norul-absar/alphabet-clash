@@ -9,23 +9,101 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- CSS -->
-     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style.css">
 
 </head>
 
-<body>
-    <section class="home">
+<body class="font-poppins">
+    <main class="min-h-screen bg-blue-950 bg-[url(images/images/background.png)] bg-no-repeat bg-center">
+        <!-- Home screen -->
+        <section id="home-screen" class="home ">
+            <div class="flex flex-col items-center h-screen justify-center gap-8">
+                <h1 class="text-8xl text-white">Alpaha Clash</h1>
+                <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ad dolore adipisci!
+                </p>
+                <button onclick="play()" class="btn">Play now</button>
 
-    </section>
-    <section class="play-ground">
+            </div>
 
-    </section>
-    <section class="score">
+        </section>
 
-    </section>
-    
+        <!-- Pay ground -->
+        <section id="payground-section"  class="play-ground flex flex-col justify-center items-center h-screen gap-16 hidden">
+            <!-- screen -->
+            <div class="aura aura-rainbow">
+                <div class="card w-96 h-32 bg-base-100 shadow-sm ">
+                    <div class="card-body flex justify-center items-center">
+                        <p>Do not play on mobile</p>
+                        <h2 class="text-3xl font-bold">Premium</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Keyboard start-->
+            <div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">q</kbd>
+                    <kbd class="kbd">w</kbd>
+                    <kbd class="kbd">e</kbd>
+                    <kbd class="kbd">r</kbd>
+                    <kbd class="kbd">t</kbd>
+                    <kbd class="kbd">y</kbd>
+                    <kbd class="kbd">u</kbd>
+                    <kbd class="kbd">i</kbd>
+                    <kbd class="kbd">o</kbd>
+                    <kbd class="kbd">p</kbd>
+                </div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">a</kbd>
+                    <kbd class="kbd">s</kbd>
+                    <kbd class="kbd">d</kbd>
+                    <kbd class="kbd">f</kbd>
+                    <kbd class="kbd">g</kbd>
+                    <kbd class="kbd">h</kbd>
+                    <kbd class="kbd">j</kbd>
+                    <kbd class="kbd">k</kbd>
+                    <kbd class="kbd">l</kbd>
+                </div>
+                <div class="my-1 flex w-full justify-center gap-1">
+                    <kbd class="kbd">z</kbd>
+                    <kbd class="kbd">x</kbd>
+                    <kbd class="kbd">c</kbd>
+                    <kbd class="kbd">v</kbd>
+                    <kbd class="kbd">b</kbd>
+                    <kbd class="kbd">n</kbd>
+                    <kbd class="kbd">m</kbd>
+                    <kbd class="kbd">/</kbd>
+                </div>
+            </div>
 
-    
+            <!-- live score -->
+             <div class="flex justify-between gap-6 w-3/4">
+                <button class="btn rounded-full">Life <span>2</span></button>
+                <button class="btn rounded-full">Score <span>4</span></button>
+             </div>
+
+        </section>
+
+        <section class="score flex flex-col justify-center items-center h-screen hidden ">
+            <div class="text-white text-center bg-yellow-400 p-8 space-y-4 rounded-xl">
+                <h2 class="text-4xl">
+                    <span class="font-extrabold">Score:</span>
+                    <span>14</span>
+                </h2>
+                <button class="btn">Play again</button>
+                <p>Practice will make you a pro</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="script/script.js"></script>
+
+
+
+
 
 </body>
 
